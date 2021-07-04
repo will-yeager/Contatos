@@ -2,8 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c531fd50-9064-4548-8c61-79240b507765" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Contatos/Contato.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Contatos/Contato.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Contatos/Controller.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Contatos/Controller.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Contatos/ListaTelefonica.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Contatos/ListaTelefonica.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Contatos/teste.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Contato.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Contato.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ListaTelefonica.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ListaTelefonica.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/teste.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,12 +35,26 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="restartRequiresConfirmation" value="false" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
   <component name="RunManager" selected="Application.Controller">
     <configuration name="Controller" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Controller" />
       <module name="Contatos" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="EntrarEndereco" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="testeScanner.EntrarEndereco" />
+      <module name="Contatos" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="testeScanner.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -45,9 +66,24 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="teste" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="testeScanner.teste" />
+      <module name="Contatos" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="testeScanner.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Application.Controller" />
+        <item itemvalue="Application.teste" />
+        <item itemvalue="Application.EntrarEndereco" />
         <item itemvalue="Application.ListaTelefonica" />
       </list>
     </recent_temporary>
@@ -74,5 +110,15 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint type="java-exception">
+          <properties class="java.util.InputMismatchException" package="java.util" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

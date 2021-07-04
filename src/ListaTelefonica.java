@@ -11,6 +11,7 @@ public class ListaTelefonica {
             if(nome.equals(contato.getNome())){
                 return indice;
             }
+            indice++;
         }
         return -1;
     }
@@ -29,10 +30,14 @@ public class ListaTelefonica {
         return "Contato adicionado com sucesso";
     }
 
-    public String atualizar(String nome, String telefone) {
-        int indice = buscarIndice(nome);
-        listaTelefonica.get(indice).atualizar(nome, telefone);
-        return "Contato atualizado com sucesso";
+    public String atualizar(String nome, String nomeNovo, String telefoneNovo) {
+        try {
+            int indice = buscarIndice(nome);
+            listaTelefonica.get(indice).atualizar(nomeNovo, telefoneNovo);
+            return "Contato atualizado com sucesso";
+        } catch (ArrayIndexOutOfBoundsException e) {
+            return "Contato não atualizado";
+        }
     }
 
     public String deletar(String nome) {

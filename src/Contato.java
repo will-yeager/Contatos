@@ -17,10 +17,6 @@ public class Contato {
         return this.nome;
     }
 
-    public String getTelefone() {
-        return this.telefone;
-    }
-
     @Override
     public String toString() {
         return "Nome: '" + nome + '\'' +
