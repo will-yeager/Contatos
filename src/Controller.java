@@ -29,7 +29,7 @@ public class Controller {
                     break;
                 case 2:
                     System.out.println("Digite o nome do contato: ");
-                    String nome = sc.nextLine();
+                    String nome = entrada.nextLine();
                     System.out.println(listatelefonica.buscarContato(nome));
                     break;
                 case 3:
@@ -50,7 +50,7 @@ public class Controller {
                     break;
                 case 5:
                     System.out.print("Digite o nome do contato: ");
-                    nome = sc.nextLine();
+                    nome = entrada.nextLine();
                     System.out.println(listatelefonica.deletar(nome));
                     break;
                 case 6:

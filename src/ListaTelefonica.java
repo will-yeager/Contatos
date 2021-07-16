@@ -18,8 +18,7 @@ public class ListaTelefonica {
 
     public String buscarContato(String nome) {
         try {
-            int indice = buscarIndice(nome);
-            return listaTelefonica.get(indice).toString();
+            return listaTelefonica.get( buscarIndice(nome) ).toString();
         } catch (ArrayIndexOutOfBoundsException e) {
             return "Erro ao tentar encontar o contato";
         }
@@ -32,8 +31,7 @@ public class ListaTelefonica {
 
     public String atualizar(String nome, String nomeNovo, String telefoneNovo) {
         try {
-            int indice = buscarIndice(nome);
-            listaTelefonica.get(indice).atualizar(nomeNovo, telefoneNovo);
+            listaTelefonica.get( buscarIndice(nome) ).atualizar(nomeNovo, telefoneNovo);
             return "Contato atualizado com sucesso";
         } catch (ArrayIndexOutOfBoundsException e) {
             return "Contato não atualizado";
@@ -42,17 +40,19 @@ public class ListaTelefonica {
 
     public String deletar(String nome) {
         try {
-            int indice = buscarIndice(nome);
-            listaTelefonica.remove(indice);
+            listaTelefonica.remove( buscarIndice(nome) );
             return "Contato removido com sucesso";
         } catch (ArrayIndexOutOfBoundsException e) {
-            return "Erro ao tentar encontar o contato";
+            return "Erro ao tentar encontrar o contato";
         }
     }
+
 
     @Override
     public String toString() {
         return "Lista Telefonica: " +
-                listaTelefonica;
+               listaTelefonica;
     }
+
+
 }
